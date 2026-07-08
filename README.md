@@ -1,6 +1,6 @@
 
 
-# 1. Executive Summary
+## 1. Executive Summary
 
    This technical report outlines the engineering process for integrating the Wazuh SIEM/EDR platform with the VirusTotal Threat Intelligence API. The primary objective is to     implement real-time File Integrity Monitoring (FIM) across managed endpoints, automatically query unknown or suspicious file hashes against VirusTotal database                 infrastructure, and execute real-time automated containment via customized Active Response scripts. The integration was successfully simulated using an Ubuntu Linux agent      and verified using standard EICAR test malware variants.
 
@@ -90,7 +90,12 @@ Also we can see the virustotal result
 
 <img width="720" height="398" alt="image" src="https://github.com/user-attachments/assets/eecaf449-880c-488d-807e-116fa5eac00f" />
 
-Step 4.1: Developing the Remediation Script
+## 4. Automated Threat Mitigation: Active Response Integration
+To advance from reactive log analytics to proactive incident mitigation, automated active containment blocks
+are built out to systematically drop malicious files discovered during an engine scan query.
+
+
+### Step 4.1: Developing the Remediation Script
 
 Install the jq utility package for parsing nested JSON data structures, and establish the custom remediation
 script file at /var/ossec/active-response/bin/remove-threat.sh:
@@ -110,7 +115,7 @@ Assign administrative execution privileges to the automation binary and cycle th
 
 <img width="720" height="77" alt="image" src="https://github.com/user-attachments/assets/fa74cf28-64b4-4762-81f9-b74ba790610d" />
 
-Step 4.2: Mapping Active Response Rules on the Manager
+### Step 4.2: Mapping Active Response Rules on the Manager
 
 To bind the containment script execution pipeline to standard analytical threat logs, inject the command
 wrapper definitions directly above the Active Response triggers section inside the manager ossec.conf file:
@@ -129,7 +134,7 @@ wrapper definitions directly above the Active Response triggers section inside t
 
  *  systemctl restart wazuh-manager
 
-5. Validation, Containment, and Analytical Diagnostics
+# 5. Validation, Containment, and Analytical Diagnostics
    
 To validate the complete automated defense pipeline, a secondary EICAR test object download sequence is
 initialized inside the target endpoint boundary directory. Within fractions of a second, the active defense
