@@ -4,7 +4,7 @@
 
    This technical report outlines the engineering process for integrating the Wazuh SIEM/EDR platform with the VirusTotal Threat Intelligence API. The primary objective is to     implement real-time File Integrity Monitoring (FIM) across managed endpoints, automatically query unknown or suspicious file hashes against VirusTotal database                 infrastructure, and execute real-time automated containment via customized Active Response scripts. The integration was successfully simulated using an Ubuntu Linux agent      and verified using standard EICAR test malware variants.
 
-# 2.  Step-by-Step Deployment Guide
+## 2.  Step-by-Step Deployment Guide
 
 ### Step 2.1: Endpoint Directory Provisioning
 
