@@ -16,9 +16,10 @@ Step 2.1: Endpoint Directory Provisioning
    <img width="720" height="392" alt="image" src="https://github.com/user-attachments/assets/76c960c8-0f03-4915-83e9-f7ff32472e31" />
 
    Step 2.2: Deploying File Integrity Monitoring (FIM) Policies
-The centralized monitoring configuration is pushed from the Wazuh Dashboard. Navigate to Agents
-management → Groups, edit the default shared configuration profile, and append the following structured
-XML block to enforce real-time auditing on the designated path:
+   
+   The centralized monitoring configuration is pushed from the Wazuh Dashboard. Navigate to Agents
+   management → Groups, edit the default shared configuration profile, and append the following structured
+   XML block to enforce real-time auditing on the designated path:
 
 *      <agent_config os="Linux">
    <syscheck>
@@ -26,7 +27,7 @@ XML block to enforce real-time auditing on the designated path:
    </syscheck>
    </agent_config>
 
-   <img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/471d1634-9bf0-48fd-8557-e8c15bc93d11" />
+ <img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/471d1634-9bf0-48fd-8557-e8c15bc93d11" />
 
    <img width="720" height="398" alt="image" src="https://github.com/user-attachments/assets/25011685-d094-4e2d-a3b4-b80585f917fa" />
 
@@ -38,6 +39,7 @@ XML block to enforce real-time auditing on the designated path:
 
   *  echo "hello world" >> /tmp/malware/hello.txt
 
+   
     <img width="720" height="81" alt="image" src="https://github.com/user-attachments/assets/2a68cc91-2b54-4d86-94b2-da8edb1e8693" />
 
      It is working
