@@ -130,6 +130,7 @@ wrapper definitions directly above the Active Response triggers section inside t
  *  systemctl restart wazuh-manager
 
 5. Validation, Containment, and Analytical Diagnostics
+   
 To validate the complete automated defense pipeline, a secondary EICAR test object download sequence is
 initialized inside the target endpoint boundary directory. Within fractions of a second, the active defense
 routine intercepts the threat signature, triggers an engine validation pass, and clears the file trace natively
