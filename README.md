@@ -44,12 +44,8 @@ Step 2.1: Endpoint Directory Provisioning
  Locate the integration blocks and insert the configuration below, replacing the placeholder text with an active,
 authenticated VirusTotal API Key:
 
-* <integration>
-  <name>virustotal</name>
-  <api_key>YOUR_VIRUSTOTAL_API_KEY</api_key>
-  <group>syscheck</group>
-  <alert_format>json</alert_format>
-</integration>
+<img width="638" height="128" alt="Screenshot 2026-07-08 235644" src="https://github.com/user-attachments/assets/d1dc3868-6b44-4ea7-a99a-c8338b0ff218" />
+
 
 Establish a secure SSH session into the core Wazuh Manager server to configure the outbound VirusTotal
 API lookup block inside the global configuration file (ossec.conf):
@@ -58,10 +54,8 @@ copy this code and paste it in /var/ossec/etc/ossec.conf
 
 so connect the ssh service of server in ubuntu agent.
 
-* ss -tulnip
-(Here we can see the 22 port is open)
-ssh wazuh-user@10.0.2.13
-sudo -i
+<img width="360" height="95" alt="Screenshot 2026-07-08 235755" src="https://github.com/user-attachments/assets/b45cb65e-4e29-41bd-8f62-9fcafef503a3" />
+
 
     
 <img width="720" height="592" alt="image" src="https://github.com/user-attachments/assets/cae50de2-42d3-47cf-85b9-501ff8b2056c" />
