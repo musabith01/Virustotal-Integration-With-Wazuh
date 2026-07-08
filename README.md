@@ -15,6 +15,7 @@ Step 2.1: Endpoint Directory Provisioning
      
    <img width="720" height="392" alt="image" src="https://github.com/user-attachments/assets/76c960c8-0f03-4915-83e9-f7ff32472e31" />
 
+  
    Step 2.2: Deploying File Integrity Monitoring (FIM) Policies
    
    The centralized monitoring configuration is pushed from the Wazuh Dashboard. Navigate to Agents
