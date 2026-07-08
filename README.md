@@ -70,6 +70,26 @@ so connect the ssh service of server in ubuntu agent.
 
  * systemctl restart wazuh-manager
 
+4. Testing Threat Intel Alert Pipeline
+
+  An operational test is executed by downloading a benign standard antivirus verification string (EICAR) directly
+  into the monitored directory path:
+
+  * curl https://secure.eicar.org/eicar.com -o /tmp/malware/eicar
+
+<img width="720" height="84" alt="image" src="https://github.com/user-attachments/assets/0bdf2edf-7da7-41eb-92c9-faeabf89c526" />
+
+Once written to disk, the FIM engine generates an alert payload which triggers an automatic hash submission
+to VirusTotal. The response is reflected directly inside the Threat Hunting dashboard.
+
+<img width="720" height="383" alt="image" src="https://github.com/user-attachments/assets/567956ab-c7ec-4044-bf1f-22eb4e527827" />
+
+We can see the Virustotal alert in Threathunting window.
+
+Also we can see the virustotal result
+
+<img width="720" height="398" alt="image" src="https://github.com/user-attachments/assets/eecaf449-880c-488d-807e-116fa5eac00f" />
+
 
 
 
