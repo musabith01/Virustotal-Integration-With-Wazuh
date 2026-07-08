@@ -6,7 +6,7 @@
 
 # 2.  Step-by-Step Deployment Guide
 
-## Step 2.1: Endpoint Directory Provisioning
+### Step 2.1: Endpoint Directory Provisioning
 
    To establish a controlled environment for testing malicious binaries, a designated sandbox directory is provisioned on the Ubuntu Agent machine with appropriate execution      and modification permissions
 
