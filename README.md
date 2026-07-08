@@ -16,7 +16,7 @@
    <img width="720" height="392" alt="image" src="https://github.com/user-attachments/assets/76c960c8-0f03-4915-83e9-f7ff32472e31" />
 
   
-   Step 2.2: Deploying File Integrity Monitoring (FIM) Policies
+  ### Step 2.2: Deploying File Integrity Monitoring (FIM) Policies
    
    The centralized monitoring configuration is pushed from the Wazuh Dashboard. Navigate to Agents
    management → Groups, edit the default shared configuration profile, and append the following structured
@@ -39,7 +39,7 @@
 
 <img width="720" height="81" alt="image" src="https://github.com/user-attachments/assets/8717d2c5-b1d1-4818-9a25-663a7fceed1a" />
 
- Step 2.3: Configuring VirusTotal Threat Intelligence on Wazuh Manager
+### Step 2.3: Configuring VirusTotal Threat Intelligence on Wazuh Manager
 
  Locate the integration blocks and insert the configuration below, replacing the placeholder text with an active,
 authenticated VirusTotal API Key:
@@ -70,7 +70,7 @@ so connect the ssh service of server in ubuntu agent.
 
  * systemctl restart wazuh-manager
 
-3. Testing Threat Intel Alert Pipeline
+## 3. Testing Threat Intel Alert Pipeline
 
   An operational test is executed by downloading a benign standard antivirus verification string (EICAR) directly
   into the monitored directory path:
