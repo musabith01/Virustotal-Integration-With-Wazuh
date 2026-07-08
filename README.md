@@ -36,9 +36,9 @@ Step 2.1: Endpoint Directory Provisioning
 
   *  echo "hello world" >> /tmp/malware/hello.txt
 
-   
-    <img width="720" height="81" alt="image" src="https://github.com/user-attachments/assets/2a68cc91-2b54-4d86-94b2-da8edb1e8693" />
+<img width="720" height="81" alt="image" src="https://github.com/user-attachments/assets/8717d2c5-b1d1-4818-9a25-663a7fceed1a" />
 
+    
 
    
 
