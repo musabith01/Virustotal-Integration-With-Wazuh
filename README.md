@@ -38,9 +38,42 @@ Step 2.1: Endpoint Directory Provisioning
 
 <img width="720" height="81" alt="image" src="https://github.com/user-attachments/assets/8717d2c5-b1d1-4818-9a25-663a7fceed1a" />
 
-    
+ Step 2.3: Configuring VirusTotal Threat Intelligence on Wazuh Manager
 
-   
+ Locate the integration blocks and insert the configuration below, replacing the placeholder text with an active,
+authenticated VirusTotal API Key:
+
+* <integration>
+  <name>virustotal</name>
+  <api_key>YOUR_VIRUSTOTAL_API_KEY</api_key>
+  <group>syscheck</group>
+  <alert_format>json</alert_format>
+</integration>
+
+Establish a secure SSH session into the core Wazuh Manager server to configure the outbound VirusTotal
+API lookup block inside the global configuration file (ossec.conf):
+
+copy this code and paste it in /var/ossec/etc/ossec.conf
+
+so connect the ssh service of server in ubuntu agent.
+
+* ss -tulnip
+(Here we can see the 22 port is open)
+ssh wazuh-user@10.0.2.13
+sudo -i
+
+    
+<img width="720" height="592" alt="image" src="https://github.com/user-attachments/assets/cae50de2-42d3-47cf-85b9-501ff8b2056c" />
+
+* nano /var/ossec/etc/ossec.conf
+
+<img width="720" height="380" alt="image" src="https://github.com/user-attachments/assets/b946638f-2773-4b06-bf38-772445e2ee11" />
+
+ Replace with your API key got from virustotal
+
+ Apply the global settings by initializing a full manager service restart command:
+
+ * systemctl restart wazuh-manager
 
 
 
