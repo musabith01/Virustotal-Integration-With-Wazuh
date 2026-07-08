@@ -21,11 +21,8 @@ Step 2.1: Endpoint Directory Provisioning
    management → Groups, edit the default shared configuration profile, and append the following structured
    XML block to enforce real-time auditing on the designated path:
 
-*  <agent_config os="Linux">
-  <syscheck>>
- <directories realtime="yes" check_all="yes">/tmp/malware</directories>
-  </syscheck>
-  </agent_config>
+*  <img width="655" height="155" alt="Screenshot 2026-07-08 232804" src="https://github.com/user-attachments/assets/1937e803-6b1a-45d4-91f2-fa3d193da42f" />
+
 
  <img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/471d1634-9bf0-48fd-8557-e8c15bc93d11" />
 
