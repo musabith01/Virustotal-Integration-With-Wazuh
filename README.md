@@ -22,12 +22,10 @@ Step 2.1: Endpoint Directory Provisioning
    XML block to enforce real-time auditing on the designated path:
 
 *      <agent_config os="Linux">
-
-  <syscheck>>
+*   <syscheck>>
         <directories realtime="yes" check_all="yes">/tmp/malware</directories>
   </syscheck>
-
-</agent_config>
+  </agent_config>
 
  <img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/471d1634-9bf0-48fd-8557-e8c15bc93d11" />
 
